@@ -1,5 +1,5 @@
 {
-  "name": "@noone/brass",
+  "name": "@jaqen404/brass",
   "version": "0.0.1",
   "description": "state management",
   "source": "src/index.ts",
@@ -22,8 +22,11 @@
   "author": "noone",
   "license": "MIT",
   "devDependencies": {
+    "@parcel/packager-ts": "2.4.1",
+    "@parcel/transformer-typescript-types": "2.4.1",
     "@tsconfig/recommended": "^1.0.1",
-    "parcel": "^2.4.1"
+    "parcel": "^2.4.1",
+    "typescript": ">=3.0.0"
   },
   "dependencies": {
     "immer": "^9.0.12",
