@@ -381,6 +381,13 @@
     "@parcel/utils" "2.4.1"
     posthtml "^0.16.4"
 
+"@parcel/packager-ts@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-ts/-/packager-ts-2.4.1.tgz#1e7f2b7177a515131481bf0b0c90be9d1d2f8c77"
+  integrity sha512-Ux3TQRsx44TZsOGBni+vviCG994CrLIpGX904Ardo0IDpsehEgOTfa6T53BNlJsYeYT9DkaojaaDP7bfVfqSjw==
+  dependencies:
+    "@parcel/plugin" "2.4.1"
+
 "@parcel/plugin@2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.4.1.tgz#15294d796be2703b16fa4e617967cfaa8e5631d4"
@@ -588,6 +595,24 @@
     posthtml-parser "^0.10.1"
     posthtml-render "^3.0.0"
     semver "^5.7.1"
+
+"@parcel/transformer-typescript-types@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-typescript-types/-/transformer-typescript-types-2.4.1.tgz#3b921171974a1bd010540ad3baf1781f26b40366"
+  integrity sha512-SAhjHNh8hRV17zlEyU+Lg8GD+7TZL7FyqUp5EJOV6GXINV2PdN9uOdKPMMBJfgV76J6BYQszG3J6FAAMvfftOQ==
+  dependencies:
+    "@parcel/diagnostic" "2.4.1"
+    "@parcel/plugin" "2.4.1"
+    "@parcel/source-map" "^2.0.0"
+    "@parcel/ts-utils" "2.4.1"
+    nullthrows "^1.1.1"
+
+"@parcel/ts-utils@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@parcel/ts-utils/-/ts-utils-2.4.1.tgz#37b321a1aec2b0450fbb9d959f5fead09647bdb7"
+  integrity sha512-qAXGkIcRkR27nFqU9tRbovDpFGsxKpUcLTsh5soVF7/yh9bHUBuactWCU+qSjY6d3YSw45J6ZSbwpsuPTN1ZzA==
+  dependencies:
+    nullthrows "^1.1.1"
 
 "@parcel/types@2.4.1":
   version "2.4.1"
@@ -1287,6 +1312,11 @@ type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
+
+typescript@>=3.0.0:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
+  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
 
 utility-types@^3.10.0:
   version "3.10.0"

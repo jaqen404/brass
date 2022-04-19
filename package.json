@@ -19,7 +19,7 @@
     "state-management",
     "immer"
   ],
-  "author": "",
+  "author": "noone",
   "license": "MIT",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
@@ -28,5 +28,9 @@
   "dependencies": {
     "immer": "^9.0.12",
     "rxjs": "^7.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaqen404/brass.git"
   }
 }
