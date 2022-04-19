@@ -1,0 +1,32 @@
+{
+  "name": "@noone/brass",
+  "version": "0.0.1",
+  "description": "state management",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "rxjs",
+    "state",
+    "reactive",
+    "store",
+    "redux",
+    "state-management",
+    "immer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "immer": "^9.0.12",
+    "rxjs": "^7.5.5"
+  }
+}
