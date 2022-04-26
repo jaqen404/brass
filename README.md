@@ -1,8 +1,8 @@
 # brass
 
-轻量级响应式状态管理器
+基于[RxJS](https://github.com/ReactiveX/rxjs)和[Immer](https://github.com/immerjs/immer)的轻量级响应式状态管理器
 
-# 安装
+## 安装
 
 ```bash
 yarn add @jaqen404/brass
@@ -14,7 +14,7 @@ or
 npm install @jaqen404/brass
 ```
 
-# 使用
+## 使用
 
 ```js
 // store.js
@@ -104,6 +104,14 @@ firstStore.setState((state) => {
 });
 ```
 
-# vue 中使用
+## vue 中使用
 
 [vue-brass 插件](https://github.com/jaqen404/vue-brass)
+
+## FAQ
+
+### 命名由来？
+
+> Brass 伯明翰，是一款经典的德式策略桌面游戏，背景是优雅而辉煌的维多利亚时代，玩家扮演工业革命期间白手起家的商人，缔造属各自的英伦传奇。
+
+<img src="https://cf.geekdo-images.com/x3zxjr-Vw5iU4yDPg70Jgw__imagepagezoom/img/7a0LOL48K-7JNIOSGtcsNsIxkN0=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic3490053.jpg" width="200" height="200" />
