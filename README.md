@@ -98,4 +98,4 @@ firstStore.actions.doAsync(10, 100);
 
 # vue 中使用
 
-[vue-brass 插件)](https://github.com/jaqen404/vue-brass)
+[vue-brass 插件](https://github.com/jaqen404/vue-brass)
