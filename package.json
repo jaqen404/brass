@@ -1,6 +1,6 @@
 {
   "name": "@jaqen404/brass",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "state management",
   "source": "src/index.ts",
   "main": "dist/main.js",
