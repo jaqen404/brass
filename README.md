@@ -96,6 +96,14 @@ import { firstStore } from "./store";
 firstStore.actions.doAsync(10, 100);
 ```
 
+```js
+// 使用 setState
+import { firstStore } from "./store";
+firstStore.setState((state) => {
+    state.people.name = state.people.name + state.count;
+});
+```
+
 # vue 中使用
 
 [vue-brass 插件](https://github.com/jaqen404/vue-brass)
