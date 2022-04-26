@@ -1,1 +1,1 @@
-export { createBrass, brassLogger, allBrass } from "./brass-core";
+export { createStore, brassLogger, stores } from "./brass-core";
