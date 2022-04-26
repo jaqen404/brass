@@ -1,0 +1,43 @@
+{
+  "name": "@jaqen404/brass",
+  "version": "0.0.13",
+  "description": "state management",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "rxjs",
+    "state",
+    "reactive",
+    "store",
+    "redux",
+    "state-management",
+    "immer"
+  ],
+  "author": "jaqen404",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "2.4.1",
+    "@parcel/transformer-typescript-types": "2.4.1",
+    "@tsconfig/recommended": "^1.0.1",
+    "parcel": "^2.4.1",
+    "typescript": ">=3.0.0"
+  },
+  "dependencies": {
+    "immer": "^9.0.12",
+    "rxjs": "^7.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaqen404/brass.git"
+  },
+  "homepage": "https://github.com/jaqen404/brass#readme",
+  "files": [
+    "dist"
+  ]
+}
