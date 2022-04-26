@@ -112,6 +112,6 @@ firstStore.setState((state) => {
 
 ### 命名由来？
 
-> Brass 伯明翰，是一款经典的德式策略桌面游戏，背景是优雅而辉煌的维多利亚时代，玩家扮演工业革命期间白手起家的商人，缔造属各自的英伦传奇。
+> Brass 伯明翰，是一款经典的德式策略桌面游戏，背景是优雅而辉煌的维多利亚时代，玩家扮演工业革命期间白手起家的商人，缔造属于各自的英伦传奇。
 
 <img src="https://cf.geekdo-images.com/UIlFaaTmaWms7F5xdEFgGA__imagepage/img/SitcV7akzI3P_dl8pPEneEpM-U4=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3549793.jpg" width="300" height="153" />
