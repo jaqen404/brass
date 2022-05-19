@@ -1,6 +1,6 @@
 {
   "name": "@jaqen404/brass",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "state management",
   "source": "src/index.ts",
   "main": "dist/main.js",
@@ -8,7 +8,8 @@
   "types": "dist/types.d.ts",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build:r": "parcel build --reporter",
+    "build:d": "parcel build --detailed-report"
   },
   "keywords": [
     "rxjs",
@@ -22,14 +23,17 @@
   "author": "jaqen404",
   "license": "MIT",
   "devDependencies": {
-    "@parcel/packager-ts": "2.4.1",
-    "@parcel/transformer-typescript-types": "2.4.1",
+    "@parcel/packager-ts": "^2.5.0",
+    "@parcel/reporter-bundle-analyzer": "^2.5.0",
+    "@parcel/transformer-typescript-types": "^2.5.0",
     "@tsconfig/recommended": "^1.0.1",
-    "parcel": "^2.4.1",
+    "@types/ramda": "^0.28.12",
+    "parcel": "^2.5.0",
     "typescript": ">=3.0.0"
   },
   "dependencies": {
     "immer": "^9.0.12",
+    "ramda": "^0.28.0",
     "rxjs": "^7.5.5"
   },
   "repository": {
