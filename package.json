@@ -1,6 +1,6 @@
 {
   "name": "@jaqen404/brass",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "state management",
   "source": "src/index.ts",
   "main": "dist/main.js",
@@ -8,6 +8,7 @@
   "types": "dist/types.d.ts",
   "scripts": {
     "watch": "parcel watch",
+    "build": "parcel build",
     "build:r": "parcel build --reporter",
     "build:d": "parcel build --detailed-report"
   },
