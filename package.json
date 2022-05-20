@@ -1,6 +1,6 @@
 {
   "name": "@jaqen404/brass",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "state management",
   "source": "src/index.ts",
   "main": "dist/main.js",
@@ -9,7 +9,7 @@
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
-    "build:r": "parcel build --reporter",
+    "build:r": "parcel build --reporter @parcel/reporter-bundle-analyzer",
     "build:d": "parcel build --detailed-report"
   },
   "keywords": [
@@ -34,7 +34,6 @@
   },
   "dependencies": {
     "immer": "^9.0.12",
-    "ramda": "^0.28.0",
     "rxjs": "^7.5.5"
   },
   "repository": {
