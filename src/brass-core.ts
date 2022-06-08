@@ -12,9 +12,6 @@ import {
 } from "rxjs"
 import { produce, current } from "immer"
 import { Store, Streams, DraftFn, Stores } from "./brass"
-// import * as R from "ramda"
-// import partial from "ramda/src/partial"
-import { partial, pipe, compose, add } from "ramda"
 
 export const stores: Stores = {}
 export const createStore = (
@@ -37,7 +34,7 @@ export const createStore = (
   // 处理 mutations
   Object.keys(reducers).forEach((key: any) => {
     const subject$ = new ReplaySubject(1)
-    const streamAction = (args: any) => produce(partial(reducers[key], args))
+    const streamAction = (args: any) => produce(reducers[key](...args))
     mutations[key] = (...args: any) => subject$.next(args)
     streams[`${key}$`] = subject$.pipe(map(streamAction))
   })
@@ -68,12 +65,8 @@ export const createStore = (
 
   let state: any = initialState
   let getters: any = {}
-  brassData$.subscribe((data: any) => {
-    state = data.state
-    getters = data.getters
-  })
   const actions: any = {}
-  const store: Store = {
+  let store: Store = {
     name,
     state$,
     mutations,
@@ -85,10 +78,26 @@ export const createStore = (
     state,
     getters,
   }
-  // 处理 actions
-  Object.keys(actionReducers).forEach((key: any) => {
-    actions[key] = (...args: any) =>
-      partial(actionReducers[key], args)({ ...store })
+  brassData$.subscribe((data: any) => {
+    state = data.state
+    getters = data.getters
+    store = {
+      name,
+      state$,
+      mutations,
+      getters$,
+      setState,
+      brassData$,
+      initialState,
+      actions,
+      state,
+      getters,
+    }
+    // 处理 actions
+    Object.keys(actionReducers).forEach((key: any) => {
+      actions[key] = (...args: any) =>
+        actionReducers[key](...args)({ ...store })
+    })
   })
   stores[name] = store
   return store
